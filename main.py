@@ -16,7 +16,7 @@ if place:
         if option == "Temperature":
             temps = [dict["main"]["temp"] / 10 for dict in filtered_data]
             date = [dict ["dt_txt"] for dict in filtered_data]
-            figure = px.line(x=date, y=temps, labels={x: "Date", y: "Temperature[C]"})
+            figure = px.line(x=date, y=temps, labels={"x": "Date", "y": "Temperature[C]"})
             st.plotly_chart(figure)
 
         if option == "Sky":
