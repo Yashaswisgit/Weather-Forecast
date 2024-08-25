@@ -1,7 +1,7 @@
 import streamlit as st
-import plotly.express as px
+
 from backend import get_data
-import plotly
+import plotly as px
 plotly.__version__
 
 st.title("Weather Forecasting Website created using Streamlit and APIs")
