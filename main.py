@@ -1,6 +1,8 @@
 import streamlit as st
 import plotly.express as px
 from backend import get_data
+import plotly
+plotly.__version__
 
 st.title("Weather Forecasting Website created using Streamlit and APIs")
 place = st.text_input("Enter your Location")
